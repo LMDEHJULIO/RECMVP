@@ -37,13 +37,16 @@ section {
 
 
 header { 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.73)), url(../img/drone.jpg);
+    background-image: linear-gradient(rgba(247, 247, 247, 0.71), rgba(0, 0, 0, 0.73)), url(../img/drone.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    background-color: darkgrey
 }
-
+.header-stuff {
+    color: black;
+}
 .logo {
     height: 100px;
     width: auto;
@@ -95,13 +98,21 @@ header {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.92);
     box-shadow: 0 2px 2px #b7b7b7;
+    z-index: 9999;
+}
+.alt-nav li {
+    display: inline;
+    margin-left: 40px;
+    color: #313131;
 }
 
-.main-nav {margin-top: 18px;}
+
+
+.alt-nav .main-nav {margin-top: 18px;}
 
 .alt-nav, .main-nav li a:link,
 alt-nav, .main-nav li a:visited {
-    padding: 16px 0;
+    padding: 14px 0;
     color: #555;
 }
 
