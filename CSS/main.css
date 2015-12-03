@@ -70,6 +70,18 @@ header {
     padding: 8px 0;
 }
 
+/*---------- FEATURES ----------*/
+
+.section-features .long-copy{
+    
+    margin-bottom: 40px;
+    
+}
+
+
+/*---------------------------*/
+
+
 .row {
     max-width: 1140px;
     margin: 0 auto;
@@ -165,6 +177,7 @@ transform: translate(-50%, -50%);
 .btn-ghost:link, .btn-ghost:link {
     border: 1px solid #e74c3c;
     color: #e74c3c;
+    
 }
 
 .btn:hover, .btn:active {
@@ -175,4 +188,39 @@ transform: translate(-50%, -50%);
     border: 1px solid #d04537;
     color: #fff;
 }
+/*--------Gallery---------*/
+.section-gallery {
+    padding: 0;
+}
 
+.room-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.room-showcase li{
+    display: block; 
+    float: left;
+    width: 25%;
+}
+
+.gallery-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.gallery-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15), opacity 0.5s;
+}
+
+.gallery-photo img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+    transition: transform 0.5s;
+}
+/*-------------------*/
