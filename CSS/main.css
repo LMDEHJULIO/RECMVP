@@ -14,6 +14,7 @@ html {
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 } 
 
 section {
@@ -36,7 +37,7 @@ section {
 
 
 header { 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.73)), url(../img/hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.73)), url(../img/drone.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -50,6 +51,14 @@ header {
     margin-top: 20px;
 }
 
+.logo-small {
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+}
+/*Main nav*/
 .main-nav {
     float: right;
     list-style: none;
@@ -77,6 +86,29 @@ header {
 .main-nav li a:active {
     border-bottom: 2px solid #e74c3c;
     padding: 8px 0;
+}
+/* Alt Nav*/
+.alt-nav{ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 2px 2px #b7b7b7;
+}
+
+.main-nav {margin-top: 18px;}
+
+.alt-nav, .main-nav li a:link,
+alt-nav, .main-nav li a:visited {
+    padding: 16px 0;
+    color: #555;
+}
+
+.alt-nav .logo {display: none;}
+
+.alt-nav .logo-small {
+display: block;
 }
 
 /*---------- FEATURES ----------*/
@@ -239,13 +271,21 @@ a:hover, a:active {
     opacity: 0.7;
     width: 100%;
     height: auto;
-    transform: scale(1.15), opacity 0.5s;
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+
 }
 
 .gallery-photo img:hover {
     opacity: 1;
     transform: scale(1.03);
-    transition: transform 0.5s;
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+    
 }
 /* ----------------------------*/
 /* HOW WE WORK */

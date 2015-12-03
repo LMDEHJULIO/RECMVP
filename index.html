@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>OmniFood</title>
+        
+        <title>RECPhilly</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="vendor/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendor/grid.css">
         <link rel="stylesheet" type="text/css" href="vendor/ionicons.min.css">
         <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,300italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/queries.css">
+
     </head>
 
     <body>
         
         <header>
-            <nav>
+            <nav class="alt-nav">
                 <div class="row">
                     <img src="img/logo_long.png" alt="RECPHILLY" class="logo">
+                    <img src="img/small-logo.png" alt="RECPHILLY" class="logo-small">
+                    
                     <ul class="main-nav">
                         <li><a>About</a></li>
                         <li><a>Our Service</a></li>
@@ -25,8 +32,10 @@
             </nav>
             <div class="main-text-box">
                 <h1>WE ARE RECPHILLY <br>PURVEYING PHILLY'S MUSIC REVIVAL</h1>
-                <a class="btn btn-full" href="#">I'm hungry</a>
-                <a class="btn btn-ghost" href="#">Show me more</a>
+<!--
+                <a class="btn btn-full" href="#"> # </a>
+                <a class="btn btn-ghost" href="#">#</a>
+-->
             </div>
             
         </header>
@@ -36,7 +45,7 @@
     
         <section class="section-features"> 
             <div class="row">
-                <h2>Providing blah blah at blah</h2>
+                <h2>Providing Resources To Philly's Best</h2>
                 <p class="long-copy">
                     Hello, we are RecPhilly, Philadelphia's artist incubator. We're really good at it, we promise.
                 </p>
@@ -76,29 +85,31 @@
     
     
         <section class="section-gallery">
-            
+            <div class="row">
+                <h2> REC ROOM &mdash; Our Studio</h2>
+            </div>
             <ul class="room-showcase clearfix">
                 <li>
                     <figure class="gallery-photo">
-                        <img src="img/1.jpg" alt="image1">
+                        <img src="img/stu1.jpg" alt="image1">
                     </figure>
                 </li>
                 
                 <li>
                     <figure class="gallery-photo">
-                        <img src="img/2.jpg" alt="image2">
+                        <img src="img/stu2.jpg" alt="image2">
                     </figure>
                 </li>
                 
                 <li>
                     <figure class="gallery-photo">
-                        <img src="img/3.jpg" alt="image3">
+                        <img src="img/stu3.jpg" alt="image3">
                     </figure>
                 </li>
                 
                 <li>
                     <figure class="gallery-photo">
-                        <img src="img/4.jpg" alt="image4">
+                        <img src="img/stu4.jpg" alt="image4">
                     </figure>
                 </li>
                 
@@ -108,25 +119,25 @@
             <ul class="room-showcase clearfix" >
                 <li>
                     <figure class="gallery-photo">
-                        <img src="img/5.jpg" alt="image1">
+                        <img src="img/stu5.jpg" alt="image1">
                     </figure>
                 </li>
                 
                 <li>
                     <figure class="gallery-photo">
-                        <img src="img/6.jpg" alt="image2">
+                        <img src="img/stu6.jpg" alt="image2">
                     </figure>
                 </li>
                 
                 <li>
                     <figure class="gallery-photo">
-                        <img src="img/7.jpg" alt="image3">
+                        <img src="img/stu7.jpg" alt="image3">
                     </figure>
                 </li>
                 
                 <li>
                     <figure class="gallery-photo">
-                        <img src="img/7.jpg" alt="image4">
+                        <img src="img/stu8.jpg" alt="image4">
                     </figure>
                 </li>
                 
@@ -176,22 +187,22 @@
             <div class="row"> 
             
                 <div class="col span-1-of-4 box">
-                    <img src="img/lisbon-3.jpg" alt="event1">
+                    <img src="img/FLIER.jpg" alt="event1">
                     <h3> SXSW </h3>
                     
-                    <div class="city-feature">
+                    <div class="event-feature">
                     
                         <i class="ion-ios-person icon-small"></i>
                         1200 in Attendance
                     </div>
                 
-                    <div class="city-feature">
+                    <div class="event-feature">
 
                         <i class="ion-ios-star icon-small"></i>
                         1200 in Attendance
                     </div>
 
-                    <div class="city-feature">
+                    <div class="event-feature">
 
                         <i class="ion-social-twitter icon-small"></i>
                         <a href="#">1200 in Attendance</a>
@@ -202,19 +213,19 @@
                     <img src="img/san-francisco.jpg" alt="event2">
                     <h3> SXSW </h3>
                     
-                    <div class="city-feature">
+                    <div class="event-feature">
                     
                         <i class="ion-ios-person icon-small"></i>
                         1200 in Attendance
                     </div>
                 
-                    <div class="city-feature">
+                    <div class="event-feature">
 
                         <i class="ion-ios-star icon-small"></i>
                         1200 in Attendance
                     </div>
 
-                    <div class="city-feature">
+                    <div class="event-feature">
 
                         <i class="ion-social-twitter icon-small"></i>
                         <a href="#">1200 in Attendance</a>
@@ -225,19 +236,19 @@
                     <img src="img/london.jpg" alt="event3">
                     <h3> SXSW </h3>
                     
-                    <div class="city-feature">
+                    <div class="event-feature">
                     
                         <i class="ion-ios-person icon-small"></i>
                         1200 in Attendance
                     </div>
                 
-                    <div class="city-feature">
+                    <div class="event-feature">
 
                         <i class="ion-ios-star icon-small"></i>
                         1200 in Attendance
                     </div>
 
-                    <div class="city-feature">
+                    <div class="event-feature">
 
                         <i class="ion-social-twitter icon-small"></i>
                         <a href="#">1200 in Attendance</a>
@@ -248,19 +259,19 @@
                     <img src="img/london.jpg" alt="event3">
                     <h3> SXSW </h3>
                     
-                    <div class="city-feature">
+                    <div class="event-feature">
                     
                         <i class="ion-ios-person icon-small"></i>
                         1200 in Attendance
                     </div>
                 
-                    <div class="city-feature">
+                    <div class="event-feature">
 
                         <i class="ion-ios-star icon-small"></i>
                         1200 in Attendance
                     </div>
 
-                    <div class="city-feature">
+                    <div class="event-feature">
 
                         <i class="ion-social-twitter icon-small"></i>
                         <a href="#">1200 in Attendance</a>
@@ -503,16 +514,12 @@
                 </div>
             
             </footer>
-        
-        
-<!--
-        
-        <div class="row">
-            <h1>RECPHILLY</h1>
-        </div>
-       
--->
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="JS/sript.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
     
     </body>
 
