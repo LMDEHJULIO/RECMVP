@@ -4,13 +4,17 @@
         
         <title>RECPhilly</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+
+        <meta name="description" content="RECPHILLY is Philadelphia's artist incubator. REC is making strides to impact the Philly music scene and help arists make their own impact at scale.">
+
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
         <link rel="stylesheet" type="text/css" href="vendor/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendor/grid.css">
-        <link rel="stylesheet" type="text/css" href="vendor/ionicons.min.css">
+        
+        <link rel="stylesheet" type="text/css" href="vendor/animate.css">
         <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,300italic' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="css/queries.css">
+        <link rel="stylesheet" type="text/css" href="css/queries.css">
 
     </head>
 
@@ -20,19 +24,21 @@
             <nav>
                 <div class="row">
 <!--                    <img src="img/logo_long.png" alt="RECPHILLY" class="logo">-->
-                    <img src="img/small-logo.png" alt="RECPHILLY" class="logo-small">
+                    <a href="#home"><img src="img/small-logo.png" alt="RECPHILLY" class="logo-small">
                     
                     <ul class="main-nav">
-                        <li><a>About</a></li>
-                        <li><a>Our Service</a></li>
-                        <li><a>Rec Room</a></li>
-                        <li><a>SIGN UP</a></li?>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#rec-room">Rec Room</a></li>
+                        <li><a href="#work">How We Work</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#subscribe">Subscribe</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </nav>
-            <div class="main-text-box">
+            <div class="main-text-box" id="home">
                 <img src="img/logo_long.png" alt="RECPHILLY" class="logo">
-                <h1 class="header-stuff clearfix">WE ARE RECPHILLY <br>PURVEYING PHILLY'S MUSIC REVIVAL</h1>
+                <h1 class="header-stuff clearfix">WE ARE RECPHILLY <br>PHILLY'S ARTIST INCUBATOR</h1>
 <!--
                 <a class="btn btn-full" href="#"> # </a>
                 <a class="btn btn-ghost" href="#">#</a>
@@ -44,7 +50,7 @@
     
 <!--    NEXT SECTION -->
     
-        <section class="section-features js--section-features"> 
+        <section class="section-features js--section-features" id="about"> 
             <div class="row">
                 <h2>Providing Resources To Philly's Best</h2>
                 <p class="long-copy">
@@ -52,7 +58,7 @@
                 </p>
             </div>
             
-            <div class="row">
+            <div class="row js--waypoint-1">
                 <div class="col span-1-of-4 box"> 
                     <h3>Years of Experience</h3>
                     <p>
@@ -85,7 +91,7 @@
         </section>
     
     
-        <section class="section-gallery">
+        <section class="section-gallery" id="rec-room">
             <div class="row">
                 <h2> REC ROOM &mdash; Our Studio</h2>
             </div>
@@ -143,17 +149,18 @@
                 </li>
                 
             </ul>
+
             
         </section>
     
-        <section class="section-steps">
+        <section class="section-steps" id="work">
             <div class="row">
                 <h2>How We Work &mdash; Take A Look</h2>
             </div>
             
             <div class="row">
                 <div class="col span-1-of-2 steps-box">
-                    <img src="img/app-iPhone.png" class="app-screen">
+                    <img src="img/iPhone.png" class="app-screen js--waypoint-2">
                 </div>
                 
                 <div class="col span-1-of-2 steps-box">
@@ -173,19 +180,17 @@
                         <p>Once you're in, you'll have our network at your finger-tips and our whole team/facility availed to you as a member.</p>
                 
                     </div>
-                    
-                    <a href="#" class="button-app"><img src="img/download-app.svg" alt="App Store Button"></a>
-                    <a href="#" class="button-app"><img src="img/download-app-android.png" alt="Play Store Button"></a>
+    
                 </div>
             </div>
                 
         </section>
     
-        <section class="section-events">
+        <section class="section-events" id="events">
             <div class="row">
                 <h2> Catch Us At Our Events </h2>
             </div>
-            <div class="row"> 
+            <div class="row js--waypoint-3"> 
             
                 <div class="col span-1-of-4 box">
                     <img src="img/FLIER.jpg" alt="event1">
@@ -315,12 +320,12 @@
             </div>
         </section>
     
-        <section class="section-plans">
+        <section class="section-plans" id="subscribe">
             <h2>Start with REC Today</h2>
             
             <div class="row">
                 <div class="col span-1-of-3">
-                    <div class="plan-box">
+                    <div class="plan-box js--waypoint-4">
                         <div>
                             
                             <h3>Premium</h3>
@@ -424,7 +429,7 @@
     
         </section>
     
-        <section class="section-form">
+        <section class="section-form" id="contact">
             <div class="row">
                 <h2>We're happy to hear from you</h2>
             </div>
@@ -469,7 +474,7 @@
                     </div>
                     <div class="row">
                         <div class="col span-1-of-3">
-                            <label>Drop us a line</label>
+                            <label>Message</label>
                         </div>
                         <div class="col span-2-of-3">
                             <textarea name="message" placeholder="Your message"></textarea>
@@ -521,7 +526,7 @@
     <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
     <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
-<script src="vendor/js/jquery.waypoints.min.js"></script>
+    <script src="vendor/js/jquery.waypoints.min.js"></script>
     
     </body>
 

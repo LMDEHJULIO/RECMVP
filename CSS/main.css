@@ -281,7 +281,7 @@ a:hover, a:active {
 .gallery-photo img {
     opacity: 0.7;
     width: 100%;
-    height: auto;
+    height: 250px;
     -webkit-transform: scale(1.15);
     -ms-transform: scale(1.15);
     transform: scale(1.15);
@@ -292,7 +292,6 @@ a:hover, a:active {
 
 .gallery-photo img:hover {
     opacity: 1;
-    transform: scale(1.03);
     -webkit-transform: scale(1.03);
     -ms-transform: scale(1.03);
     transform: scale(1.03);
@@ -364,7 +363,7 @@ a:hover, a:active {
 
 .box img {
     width: 100%;
-    height: auto;
+    height: 166px;
     margin-bottom: 15px;
 }
 
@@ -570,3 +569,23 @@ footer p {
     margin-top: 20px;
     
 }
+
+/* ----------------------------*/
+/* Animation */
+/* ----------------------------*/
+
+.js--waypoint-1, .js--waypoint-2, .js--waypoint-3 {
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+.js--waypoint-4 {
+
+    animation-duration: 1s;
+}
+
+.js--waypoint-1.animated, .js--waypoint-2.animated, .js--waypoint-3.animated {
+    opacity: 1;
+}
+
+
