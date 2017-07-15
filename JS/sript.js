@@ -34,7 +34,7 @@ $(document).ready( function() {
         $('.js--waypoint-1').addClass('animated fadeIn');
         
     }, {
-        offset: "50%"
+        offset: "60%"
     });
 
 

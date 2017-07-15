@@ -124,11 +124,10 @@ display: block;
 
 /*---------- FEATURES ----------*/
 
-.section-features .long-copy{
-    
-    margin-bottom: 40px;
-    
+.section-features .long-copy{margin-bottom: 40px;
 }
+
+.about-header{ color: crimson;}
 
 
 /*---------------------------*/
@@ -139,16 +138,11 @@ display: block;
     margin: 0 auto;
 }
 
-.box {
-    padding: 1%;
-    
-}
+.box {padding: 1%;}
 
 h1, h2, h3 {
     font-weight: 200;
-    text-trasform: uppercase; 
-    
-    
+    text-trasform: uppercase;   
 }
 
 h1 {
